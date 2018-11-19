@@ -5,7 +5,7 @@ WORKDIR /root
 # common packages
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-    ca-certificates curl file git \
+    ca-certificates curl file git docker \
     build-essential \
     autoconf automake autotools-dev libtool xutils-dev && \
     rm -rf /var/lib/apt/lists/*
